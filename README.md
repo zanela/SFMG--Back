@@ -43,7 +43,7 @@ PROD_BASE_URL=https://prod.example.com
 
 Certifique-se de que o arquivo .env está sendo carregado no seu projeto. Para isso, instale o dotenv:
 
-y
+
 npm install dotenv
 E adicione no início do arquivo onde você configura a URL base (setBaseUrl.js):
 
@@ -65,8 +65,7 @@ Rodar testes no ambiente de produção (PROD):
 npx cross-env Environment=PROD yarn playwright test --ui
 Rodar testes em modo headless (sem interface gráfica):
 
-bash
-Copy
+
 npx cross-env Environment=DEV yarn playwright test
 Rodar testes em um navegador específico (por exemplo, Chromium):
 
